@@ -1,0 +1,12 @@
+run_name: baseline1_canny_merged
+seed: 0
+data: data/merged/data.yaml
+tune_split: val        # pick the best Canny settings here...
+eval_split: test       # ...and report once on this split
+iou_threshold: 0.5
+min_box_area: 100      # ignore tiny blobs (pixels^2)
+grid:
+  blur_ksize: [3, 5]
+  canny_low: [30, 50, 80]
+  canny_high: [100, 150, 200]
+  close_ksize: [5, 9, 15]

@@ -1,0 +1,11 @@
+run_name: yolov8n_merged_v2
+seed: 0
+data: data/merged/data.yaml
+model: yolov8n.pt        # pretrained weights, downloaded automatically
+epochs: 120
+imgsz: 640
+batch: 16
+patience: 30
+workers: 2
+eval_split: test
+project: runs/yolo

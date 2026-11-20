@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+runs/
+*.pt
+*.onnx
+*.zip
+data/*
+!data/README.md
+results/*
+!results/.gitkeep
+!results/experiment_log.csv
+!results/*.json
+!results/figures/
+results/_resolved_data.yaml
